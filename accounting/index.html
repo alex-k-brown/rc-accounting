@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Accounting Services</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" 
+      type="image/ico" 
+      href="../images/favicon.ico">
+</head>
+</head>
+<body>
+
+<div id="accounting">
+	<img src="img/accountants.png" class="mobile-img" alt="Accountants Icon">
+	<div class="left-header">
+		<h1>Accounting Services</h1>
+		<p>RoomChoice offers felxible accounting packages to meet any need and fit withing every budget. Our accounts will handle the tedious tasks you just don't want to do.</p>
+	</div><!--left-header-->
+	<img class="header-img" src="img/accountants.png" alt="Accountants Icon">
+	<div class="table">
+		<ul class="header-row">
+			<li class="table-image table-header"><img src="img/roomchoice.png" alt="RoomChoice Icon"></li>
+			<li class="gray-cell">On-Call Accountants</li>
+			<li>Month-End Reports</li>
+			<li class="gray-cell">Quickbooks Integration</li>
+			<li>Accounts Receivable</li>
+			<li class="gray-cell">Accounts Payable</li>
+			<li>Budgeting</li>
+			<li class="gray-cell">Financial Statements</li>
+			<li>Payroll</li>
+		</ul>
+		<ul class="table-row">
+			<li class="table-header">
+				<h2>Guided Support</h2>
+				<h3>$1.00 /bed</h3>
+			</li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-check"></i></li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-times"></i></li>
+			<li class="gray-cell"><i class="fa fa-times"></i></li>
+			<li><i class="fa fa-times"></i></li>
+			<li class="gray-cell"><i class="fa fa-times"></i></li>
+			<li><i class="fa fa-times"></i></li>
+		</ul>
+		<ul class="table-row shadow-row" id="accounts-row">
+			<li class="table-header">
+				<h2>Accounts Receivable</h2>
+				<h3>$3.00 /bed</h3>
+			</li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-check"></i></li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-check"></i></li>
+			<li class="gray-cell"><i class="fa fa-times"></i></li>
+			<li><i class="fa fa-times"></i></li>
+			<li class="gray-cell"><i class="fa fa-times"></i></li>
+			<li><i class="fa fa-times"></i></li>
+		</ul>
+		<ul class="table-row">
+			<li class="table-header">
+				<h2>Full Service</h2>
+				<h3>$6.00 /bed</h3>
+			</li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-check"></i></li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-check"></i></li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-check"></i></li>
+			<li class="gray-cell"><i class="fa fa-check"></i></li>
+			<li><i class="fa fa-check"></i></li>
+		</ul>
+	</div><!--table-->
+	<div class="bottom-text">
+		<p>RoomChoice knows change sucks. That's why we support Quickbooks integration. We'll help you build your Quickbooks files and make sure they are compatible with our software.</p>
+		<p>RoomChoice accountants are ready and willing to help you with all your financial reporting needs. We'll compile month-end and Owner's reports so you don't have to.</p>
+		<p class="blue">Contact us to set up a demo!</p>
+		<form id="contactForm" method="post" action="https://roomchoice.insidesales.com/do=noauth/add_lead/4" name="editPage" onsubmit="return validate(fieldArray, this);">
+					<input type="hidden" name="r_link" value="http://www.roomchoice.com/thank-you.html#footer">
+					<input type="hidden" name="email_template" value="22_$">
+					<input type="hidden" name="oi" value="1_##">
+					<input type="hidden" name="selected_campaign_id" value="!!!!!!!_!!">
+					<script language="JavaScript" src="https://roomchoice.insidesales.com/js/validate.js"></script>
+					<script language="JavaScript"><!--
+					// SET UP VALIDATION ARRAY
+					var fieldArray = new Array();
+					fieldArray[0] = "last_name|Last Name|blank"; // field|field name|blank,DDSEelected,phone,email
+					fieldArray[1] = "email|Email|email,blank";
+					fieldArray[2] = "first_name|First Name|blank";
+					fieldArray[3] = "phone|Phone|blank";
+					// -->
+					</script>
+					<div class="left">		
+						<input placeholder="First Name" name="first_name" type="text" maxlength="40" value="">
+					</div>
+					<div class="right">
+			 			<input placeholder="Last Name" type="text" name="last_name">
+			 		</div>
+			 		<div class="left">
+						<input placeholder="Email" type="text" name="email">
+					</div>
+					<div class="right">
+						<input placeholder="Phone Number" type="text" name="phone">
+					</div>
+					<div class="full-width">
+						<input placeholder="Company" type="text" name="account_name" required>
+					</div>
+					<div class="submit-div">
+		               <input class="submit" type="submit" value="Submit " name="save">
+		            </div>
+				</form>
+	</div><!--bottom-text-->
+</div><!--accounting-->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+	var main = function() {
+		$('.table-row').hover(function() {
+			$('.table-row').removeClass('shadow-row');
+			$(this).toggleClass('shadow-row');
+		});
+		$('.table').mouseleave(function() {
+			$('.table-row').removeClass('shadow-row');
+			$('#accounts-row').addClass('shadow-row');
+		});
+	};
+	$(document).ready(main);
+</script>
+</body>
+</html>
